@@ -17,7 +17,7 @@ jobs:
         run: npm test
       - name: Build project
         run: |
-          mkdir dist
+          mkdir -p dist
           echo "Build artifact created at $(date)" > dist/build.txt
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
